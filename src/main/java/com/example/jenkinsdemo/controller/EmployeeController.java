@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EmployeeController {
 
     @GetMapping("/{id}")
-    public Employee getEmployees(@PathVariable("id") String id){
+    public Employee getEmployees(@PathVariable String id){
         Employee employee = new Employee("biniam","12",33);
         return employee;
     }
